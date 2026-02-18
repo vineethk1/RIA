@@ -1,0 +1,27 @@
+{
+    "agents": {
+        "coast_agent": {
+            "description": "Provides information related to manufacturing",
+            "endpoint": "http://localhost:8080/chat/manufacturing",
+            "method": "POST",
+            "query_params": [],
+            "required_fields": [
+                "query"
+            ],
+            "response_format": "json",
+            "response_field": [
+                "response"
+            ],
+            "memory": {
+                "enabled": true,
+                "delivery": "body",
+                "field_name": "conversation_history",
+                "send_as": "json",
+                "item_template": {
+                    "role": "{role}",
+                    "content": "{text}"
+                }
+            }
+        }
+    }
+}
