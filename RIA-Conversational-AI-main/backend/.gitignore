@@ -1,0 +1,52 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Flask-related files (if using Flask for part of the stack)
+*.sqlite3
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Docker
+*.docker/
+
+# FastAPI-specific
+*.db
+
+# Coverage reports (if using coverage.py for testing)
+.coverage
+.coverage.*
+nosetests.xml
+*.cover
+
+# Environment variables
+.env
+.env.*
+
+# mypy, pyright, or other static type checkers
+.mypy_cache/
+.pyright/
+
+# macOS system files
+.DS_Store
